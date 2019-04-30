@@ -1,0 +1,19 @@
+{
+  "name": "emsdk-npm",
+  "version": "0.1.0",
+  "description": "experimental wrapping of emscripten's emsdk into an npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "emsdk-checkout": "src/emsdk-checkout.js",
+    "emsdk": "src/emsdk.js",
+    "emsdk-run": "src/emsdk-run.js"
+  },
+  "keywords": [
+    "emscripten"
+  ],
+  "author": "",
+  "license": "MIT"
+}
