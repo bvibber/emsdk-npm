@@ -1,7 +1,7 @@
 BINDIR=`dirname "$0"`
 DIR=`dirname "$BINDIR"`
 
-if [ "x$1" == "x" ]; then
+if [ "x$1" = "x" ]; then
     echo "emsdk-run"
     echo "Usage: emsdk-run <command> [<arg>...]"
     echo "Runs a given command within the context of the emsdk environment"
