@@ -20,13 +20,15 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 
+const os = require('os');
 const path = require('path');
 const common = require('./common.js');
 
 function emsdk(args) {
     const basedir = common.base();
     const emsdkdir = path.join(basedir, 'emsdk');
-    const emsdk = path.join(emsdkdir, 'emsdk');
+    const suffix = (os.type() == 'Windows_NT') ? '.bat' : '';
+    const emsdk = path.join(emsdkdir, 'emsdk' + suffix);
     common.run(emsdk, args);
 }
 

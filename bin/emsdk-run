@@ -12,5 +12,5 @@ fi
 # Set PATH and other environment vars
 . "$DIR/emsdk/emsdk_env.sh"
 
-# Run the binary, which should now be in PAT
+# Run the binary, which should now be in PATH
 "$1" "${@:2}"
