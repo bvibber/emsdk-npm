@@ -13,7 +13,7 @@ npm install --save-dev emsdk-npm
 npx emsdk-checkout
 npx emsdk install latest
 npx emsdk activate latest
-npx emsdk-run emcc test.c test.html
+npx emsdk-run emcc test.c -o test.html
 ```
 
 You can choose a specific release of emscripten to install by changing the `emsdk` parameters from "`latest`".
