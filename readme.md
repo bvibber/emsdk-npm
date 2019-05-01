@@ -31,6 +31,7 @@ Note that emsdk is used in "embedded" mode where it does not alter the user's gl
 ## Future plans
 
 * make work on Windows
+* add JS interfaces to use via Grunt etc
 * add helper to auto-install an emscripten version based on parent's `package.json`
 * if this is good for folks, move repo to `emscripten-core` and use a more official-sounding package name
 
