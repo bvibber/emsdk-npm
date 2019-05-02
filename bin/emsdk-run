@@ -10,7 +10,12 @@ if [ "x$1" = "x" ]; then
 fi
 
 # Set PATH and other environment vars
-. "$DIR/emsdk/emsdk_env.sh"
+# Manually change directory to work around bug with some shells:
+# https://github.com/emscripten-core/emsdk/issues/234
+EMSDKRUN_CURDIR=`pwd`
+cd "$DIR/emsdk"
+. ./emsdk_env.sh
+cd "$EMSDKRUN_CURDIR"
 
 # Run the binary, which should now be in PATH
 "$1" "${@:2}"
