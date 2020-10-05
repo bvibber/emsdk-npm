@@ -42,7 +42,7 @@ function run(command, args) {
         }
     );
     child.on('exit', (e) => {
-        process.exit(e.code);
+        process.exit(e);
     });
     child.on('error', (err) => {
         throw err;
