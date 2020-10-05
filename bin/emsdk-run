@@ -1,3 +1,5 @@
+#!/bin/bash
+
 BINDIR=`dirname "$0"`
 DIR=`dirname "$BINDIR"`
 
